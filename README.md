@@ -29,8 +29,8 @@ Control your computer's mouse cursor using hand gestures and your webcam. This p
 
 Note: Enusre you're using python version 3.10 or 3.9, mediapipe might not work on newer versions
 
+3. Run the file
    ```bash
-   run the file
    python virtual_mouse_py
    ```
    
