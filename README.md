@@ -22,9 +22,12 @@ Control your computer's mouse cursor using hand gestures and your webcam. This p
    git clone https://github.com/harshk007-p/Virtual-Mouse.git
    cd Virtual-Mouse
    ```
+2. Install The required libraries
    ```bash
    pip install opencv-python mediapipe pyautogui
    ```
+
+Note: Enusre you're using python version 3.10 or 3.9, mediapipe might not work on newer versions
 
    ```bash
    run the file
