@@ -27,7 +27,7 @@ Control your computer's mouse cursor using hand gestures and your webcam. This p
    pip install opencv-python mediapipe pyautogui
    ```
 
-Note: Enusre you're using python version 3.10 or 3.9, mediapipe might not work on newer versions
+Note: Ensure you're using python version 3.10 or 3.9, mediapipe might not work on newer versions
 
 3. Run the file
    ```bash
