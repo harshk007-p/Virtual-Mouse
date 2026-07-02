@@ -20,11 +20,11 @@ screen_width, screen_height = pyautogui.size()
 
 frame_reduction = 100 
 
-# Variables shared between our two threads
+
 display_frame = None
 running = True
 
-# --- BACKGROUND THREAD (Never freezes) ---
+
 def process_camera():
     global display_frame, running
     
@@ -98,19 +98,19 @@ def process_camera():
 
         display_frame = frame.copy()
 
-# Start the background worker
+
 t = threading.Thread(target=process_camera)
 t.start()
 
-# --- MAIN THREAD (Handles just the video window) ---
+
 while True:
     if display_frame is not None:
         cv2.imshow('Virtual Mouse', display_frame)
         
     if cv2.waitKey(1) & 0xFF == ord('q'):
-        running = False # Tell the background thread to stop
+        running = False 
         break
 
-t.join() # Wait for the background thread to safely close
+t.join() 
 cap.release()
 cv2.destroyAllWindows()
